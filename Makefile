@@ -1,6 +1,6 @@
 .PHONY: all provision
 
-IMAGE = "python"
+IMAGE = "p0bailey/docker-python"
 
 SCRIPT = "myscrypt.py"
 
