@@ -24,7 +24,7 @@ build:
 	docker build -t $(IMAGE) .
 
 run:
-	docker run --rm -v $(CURDIR)/$(SCRIPT):/$(SCRIPT) python python $(SCRIPT)
+	docker run --rm -v $(CURDIR)/$(SCRIPT):/$(SCRIPT) $(IMAGE) python $(SCRIPT)
 
 clean:
 	docker rmi  $(IMAGE)
